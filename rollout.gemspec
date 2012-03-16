@@ -37,18 +37,18 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_development_dependency(%q<rspec>, ["= 1.2.9"])
-      s.add_development_dependency(%q<bourne>, ["= 1.0.0"])
-      s.add_development_dependency(%q<redis>, ["= 0.1"])
+      s.add_development_dependency("rspec", [">= 1.2.9"])
+      s.add_development_dependency("bourne", [">= 1.0.0"])
+      s.add_development_dependency("redis", [">= 0.1"])
     else
-      s.add_dependency(%q<rspec>, ["= 1.2.9"])
-      s.add_dependency(%q<bourne>, ["= 1.0.0"])
-      s.add_dependency(%q<redis>, ["= 0.1"])
+      s.add_dependency("rspec", [">= 1.2.9"])
+      s.add_dependency("bourne", [">= 1.0.0"])
+      s.add_dependency("redis", [">= 0.1"])
     end
   else
-    s.add_dependency(%q<rspec>, ["= 1.2.9"])
-    s.add_dependency(%q<bourne>, ["= 1.0.0"])
-    s.add_dependency(%q<redis>, ["= 0.1"])
+    s.add_dependency("rspec", [">= 1.2.9"])
+    s.add_dependency("bourne", [">= 1.0.0"])
+    s.add_dependency("redis", [">= 0.1"])
   end
 end
 
